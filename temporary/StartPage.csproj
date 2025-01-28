@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DCE6F44-9B09-4752-9C6A-4BF584093EC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StartPage</RootNamespace>
+    <AssemblyName>StartPage</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminEmployyeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEmployyeList.Designer.cs">
+      <DependentUpon>AdminEmployyeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHomepage.Designer.cs">
+      <DependentUpon>AdminHomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManagerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminManagerList.Designer.cs">
+      <DependentUpon>AdminManagerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegister.Designer.cs">
+      <DependentUpon>AdminRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginemployee.Designer.cs">
+      <DependentUpon>Loginemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginmanager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginmanager.Designer.cs">
+      <DependentUpon>Loginmanager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startpage.Designer.cs">
+      <DependentUpon>Startpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginadmin.Designer.cs">
+      <DependentUpon>Loginadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminEmployyeList.resx">
+      <DependentUpon>AdminEmployyeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHomepage.resx">
+      <DependentUpon>AdminHomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminManagerList.resx">
+      <DependentUpon>AdminManagerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRegister.resx">
+      <DependentUpon>AdminRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginemployee.resx">
+      <DependentUpon>Loginemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginmanager.resx">
+      <DependentUpon>Loginmanager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startpage.resx">
+      <DependentUpon>Startpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginadmin.resx">
+      <DependentUpon>Loginadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg 21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded-back-icon-element-free-png.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
